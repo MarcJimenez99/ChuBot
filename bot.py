@@ -6,7 +6,7 @@ bot = commands.Bot(command_prefix='!')
 bot.remove_command('help')
 
 def check_list(name):
-    with open("FirstDiscordBot/whitelist.txt", "r") as list_file: 
+    with open("whitelist.txt", "r") as list_file: 
         flag = False
         for line in list_file.readlines():
             if str(name) in line:
@@ -15,13 +15,13 @@ def check_list(name):
         return flag
     
 def add_list(name):
-    with open("FirstDiscordBot/whitelist.txt", "a") as list_file: 
+    with open("whitelist.txt", "a") as list_file: 
         list_file.write(f'\n{str(name)}')
 
 def remove_list(name):
-    with open("FirstDiscordBot/whitelist.txt", "r") as f: 
+    with open("whitelist.txt", "r") as f: 
         lines = f.readlines()
-    with open("FirstDiscordBot/whitelist.txt", "w") as f:
+    with open("whitelist.txt", "w") as f:
         for line in lines:
             if line.strip("\n") != str(name):
                 f.write(line)
@@ -49,7 +49,7 @@ async def help(ctx):
     embed = discord.Embed(color = discord.Color.orange())
 
     embed.set_author(name='Help:')
-    embed.set_thumbnail(url='https://github.com/MarcJimenez99/ChuBot/blob/master/ChuBot.jpg')
+    embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/178405015059169280/693425554627493898/chubot.jpg')
     embed.add_field(name='!help_commands', value='List of commands', inline=False)
     embed.add_field(name='!help_mod_commands', value='List of whitelisted commands', inline=False)
     
@@ -59,18 +59,18 @@ async def help(ctx):
 async def help_commands(ctx):
     embed = discord.Embed(color = discord.Color.orange())
     embed.set_author(name='Commands:')
-    embed.set_thumbnail(url='https://github.com/MarcJimenez99/ChuBot/blob/master/ChuBot.jpg')
+    embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/178405015059169280/693425554627493898/chubot.jpg')
     embed.add_field(name='!ping', value='Returns bot latency(ms)', inline=True)
-    embed.add_field(name='users', value='Returns # of users', inline=True)
-    embed.add_field(name='hello', value='Says hi!', inline=False)
-    embed.add_field(name='8ball', value='Answers the tough questions!', inline=True)
+    embed.add_field(name='!users', value='Returns # of users', inline=True)
+    embed.add_field(name='!hello', value='Says hi!', inline=False)
+    embed.add_field(name='!8ball', value='Answers the tough questions!', inline=True)
     await ctx.send(embed=embed)
 
 @bot.command()
 async def help_mod_commands(ctx):
     embed = discord.Embed(color = discord.Color.orange())
     embed.set_author(name='Commands:')
-    embed.set_thumbnail(url='https://github.com/MarcJimenez99/ChuBot/blob/master/ChuBot.jpg')
+    embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/178405015059169280/693425554627493898/chubot.jpg')
     embed.add_field(name='!add_to_whitelist', value='Adds a user to the whitelist', inline=False)
     embed.add_field(name='!remove_from_whitelist', value='Removes a whitelisted user', inline=True)
     
@@ -152,4 +152,4 @@ async def _8ball(ctx, *, question): # Asterik takes in all following arguments
     ]  
     await ctx.send(f'Question: {question}\nAnswer: {random.choice(responses)}')
    
-bot.run('NjkyNjY3Mzg0MDQ0OTc4MjUw.Xn8fFA.ahVtNdz8kVI0tgshRvZd2i-COEc')
+bot.run('Bot Token Goes Here')
