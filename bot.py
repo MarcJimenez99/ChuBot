@@ -122,4 +122,4 @@ async def _8ball(ctx, *, question): # Asterik takes in all following arguments
     ]  
     await ctx.send(f'Question: {question}\nAnswer: {random.choice(responses)}')
    
-bot.run('NjkyNjY3Mzg0MDQ0OTc4MjUw.Xn7LAg.zpUYFdJewF6GiEWyNG-gCh9yPuY')
+bot.run('')
