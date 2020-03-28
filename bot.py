@@ -3,6 +3,7 @@ import random
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='!')
+bot.remove_command('help')
 
 def check_list(name):
     with open("FirstDiscordBot/whitelist.txt", "r") as list_file: 
@@ -43,8 +44,37 @@ async def on_member_remove(member):
         if str(channel) == "general_cancer":
             await channel.send(f"""{member} has left the server.""")
 
-# @bot.command()
-# async def help(ctx)
+@bot.command()
+async def help(ctx):
+    embed = discord.Embed(color = discord.Color.orange())
+
+    embed.set_author(name='Help:')
+    embed.set_thumbnail(url='https://github.com/MarcJimenez99/ChuBot/blob/master/ChuBot.jpg')
+    embed.add_field(name='!help_commands', value='List of commands', inline=False)
+    embed.add_field(name='!help_mod_commands', value='List of whitelisted commands', inline=False)
+    
+    await ctx.send(embed=embed)
+
+@bot.command()
+async def help_commands(ctx):
+    embed = discord.Embed(color = discord.Color.orange())
+    embed.set_author(name='Commands:')
+    embed.set_thumbnail(url='https://github.com/MarcJimenez99/ChuBot/blob/master/ChuBot.jpg')
+    embed.add_field(name='!ping', value='Returns bot latency(ms)', inline=True)
+    embed.add_field(name='users', value='Returns # of users', inline=True)
+    embed.add_field(name='hello', value='Says hi!', inline=False)
+    embed.add_field(name='8ball', value='Answers the tough questions!', inline=True)
+    await ctx.send(embed=embed)
+
+@bot.command()
+async def help_mod_commands(ctx):
+    embed = discord.Embed(color = discord.Color.orange())
+    embed.set_author(name='Commands:')
+    embed.set_thumbnail(url='https://github.com/MarcJimenez99/ChuBot/blob/master/ChuBot.jpg')
+    embed.add_field(name='!add_to_whitelist', value='Adds a user to the whitelist', inline=False)
+    embed.add_field(name='!remove_from_whitelist', value='Removes a whitelisted user', inline=True)
+    
+    await ctx.send(embed=embed)
 
 @bot.command()
 async def ping(ctx):
@@ -122,4 +152,4 @@ async def _8ball(ctx, *, question): # Asterik takes in all following arguments
     ]  
     await ctx.send(f'Question: {question}\nAnswer: {random.choice(responses)}')
    
-bot.run('')
+bot.run('NjkyNjY3Mzg0MDQ0OTc4MjUw.Xn8fFA.ahVtNdz8kVI0tgshRvZd2i-COEc')
