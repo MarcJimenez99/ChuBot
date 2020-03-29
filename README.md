@@ -30,8 +30,17 @@ In the future users can customize which channels ChuBot will send announcements 
 
 ## Commands
 
-
 ### User Commands
+
+***!help:*** Sends an embedded messaege that helps redirect a user depending if they need a regular user command or a whitelisted command.
+
+<img src = "https://github.com/MarcJimenez99/ChuBot/blob/master/chubotPics/help.ex.JPG">
+
+The following pictures shows the results of entering `!help_commands` and `!help_mod_commands`
+
+<img src = "https://github.com/MarcJimenez99/ChuBot/blob/master/chubotPics/help_commands.JPG">
+
+<img src = "https://github.com/MarcJimenez99/ChuBot/blob/master/chubotPics/help_mod_commands.JPG">
 
 ### Whitelisted Commands
 
