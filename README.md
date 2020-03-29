@@ -1,5 +1,11 @@
 # ChuBot version 1.0
 
+<imgsrc="https://github.com/MarcJimenez99/ChuBot/blob/master/chubot.jpg">
+
+To invite ChuBot to your own server click on the following link:
+
+https://discordapp.com/api/oauth2/authorize?client_id=692667384044978250&permissions=8&scope=bot
+
 ChuBot is the first Discord bot I have ever worked on! It makes use of the discord.py module designed by Rapptz. In this current working version the bot is capable of handling the following events and commands:
 
 ## Events
@@ -33,4 +39,4 @@ In the future users can customize which channels ChuBot will send announcements 
 
 
 
-https://discordapp.com/api/oauth2/authorize?client_id=692667384044978250&permissions=8&scope=bot
+
