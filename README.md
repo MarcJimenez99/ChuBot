@@ -66,11 +66,11 @@ The following pictures shows the results of entering `!help_commands` and `!help
 
 ***!remove_from_whitelist (name#ID)*** Takes in a user's discord ID. If the user is whitelisted then ChuBot will remove the given name from it's whitelist. This restricts the user's access to all whitelisted commands.
 
-<img src = "">
+![Alt Text](https://github.com/MarcJimenez99/ChuBot/blob/master/chubotPics/remove_from_list.gif)
 
 ***!clear (number)*** ChuBot takes in a number and deletes the `!clear` command and messages before it. 
 
-<img src = "">
+![Alt Text](https://github.com/MarcJimenez99/ChuBot/blob/master/chubotPics/clear.gif)
 
 
 
