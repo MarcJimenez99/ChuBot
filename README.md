@@ -14,6 +14,7 @@ ChuBot will print the following when a user joins a server
 <img src = "https://github.com/MarcJimenez99/ChuBot/blob/master/chubotPics/join.JPG">
 
 Chubot will print the following when a user leaves a server
+
 <img src = "https://github.com/MarcJimenez99/ChuBot/blob/master/chubotPics/leave.JPG">
 
 `Out of scope`:
