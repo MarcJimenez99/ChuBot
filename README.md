@@ -1,6 +1,6 @@
 # ChuBot version 1.0
 
-<img src="https://github.com/MarcJimenez99/ChuBot/blob/master/chubot.jpg">
+<img src="https://github.com/MarcJimenez99/ChuBot/blob/master/chubot.jpg" width="200"/>
 
 To invite ChuBot to your own server click on the following link:
 
