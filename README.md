@@ -62,7 +62,7 @@ The following pictures shows the results of entering `!help_commands` and `!help
 
 ***!add_to_whitelist (name#ID)*** Takes in a user's discord ID. If the user is whitelisted then ChuBot will enter the given name into it's whitelist. This grants the user access to all whitelisted comamnds. 
 
-![Alt Text](https://github.com/MarcJimenez99/ChuBot/blob/master/chubotPics/add_to_whitelist_ex.gif)
+![Alt Text](https://github.com/MarcJimenez99/ChuBot/blob/master/chubotPics/add2waitlist.gif)
 
 ***!remove_from_whitelist (name#ID)*** Takes in a user's discord ID. If the user is whitelisted then ChuBot will remove the given name from it's whitelist. This restricts the user's access to all whitelisted commands.
 
