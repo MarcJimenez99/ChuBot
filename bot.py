@@ -63,7 +63,7 @@ async def help_commands(ctx):
     embed.add_field(name='!ping', value='Returns bot latency(ms)', inline=True)
     embed.add_field(name='!users', value='Returns # of users', inline=True)
     embed.add_field(name='!hello', value='Says hi!', inline=False)
-    embed.add_field(name='!8ball', value='Answers the tough questions!', inline=True)
+    embed.add_field(name='!8ball (question)', value='Answers the tough questions!', inline=True)
     await ctx.send(embed=embed)
 
 @bot.command()
@@ -71,9 +71,9 @@ async def help_mod_commands(ctx):
     embed = discord.Embed(color = discord.Color.orange())
     embed.set_author(name='Commands:')
     embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/178405015059169280/693425554627493898/chubot.jpg')
-    embed.add_field(name='!add_to_whitelist', value='Adds a user to the whitelist', inline=False)
-    embed.add_field(name='!remove_from_whitelist', value='Removes a whitelisted user', inline=True)
-    embed.add_field(name='!clear', value='Clears a number of messages', inline=True)
+    embed.add_field(name='!add_to_whitelist (name#ID)', value='Adds a user to the whitelist', inline=False)
+    embed.add_field(name='!remove_from_whitelist (name#ID)', value='Removes a whitelisted user', inline=True)
+    embed.add_field(name='!clear (number)', value='Clears a number of messages', inline=True)
     await ctx.send(embed=embed)
 
 @bot.command()
@@ -157,4 +157,4 @@ async def _8ball(ctx, *, question): # Asterik takes in all following arguments
     ]  
     await ctx.send(f'Question: {question}\nAnswer: {random.choice(responses)}')
    
-bot.run('Bot token goes here')
+bot.run('NjkyNjY3Mzg0MDQ0OTc4MjUw.XoAarA.tqtPKeIzjOPSaTKJZ7kpb9idghw')
