@@ -1,7 +1,6 @@
 # ChuBot version 1.0
 
-<img src="https://github.com/MarcJimenez99/ChuBot/blob/master/chubot.jpg" width="200"/>
-To invite ChuBot to your own server click on the following link:
+<img src="https://github.com/MarcJimenez99/ChuBot/blob/master/chubot.jpg" width="200"/> To invite ChuBot to your own server click on the following link:
 https://discordapp.com/api/oauth2/authorize?client_id=692667384044978250&permissions=8&scope=bot
 
 **Note: ChuBot is currently not hosted on an external server. To run the bot, it will have to be running on my own machine. In the future the functionality will be added. Please contact me to test.** 
