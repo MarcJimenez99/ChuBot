@@ -1,6 +1,7 @@
 # ChuBot version 1.0
 
 To invite ChuBot to your own server click on the following link:
+
 https://discordapp.com/api/oauth2/authorize?client_id=692667384044978250&permissions=8&scope=bot
 
 <img src="https://github.com/MarcJimenez99/ChuBot/blob/master/chubot.jpg" width="200"/> 
