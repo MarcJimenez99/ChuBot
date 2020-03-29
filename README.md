@@ -1,12 +1,12 @@
 # ChuBot version 1.0
 
-<imgsrc="https://github.com/MarcJimenez99/ChuBot/blob/master/chubot.jpg">
+<img src="https://github.com/MarcJimenez99/ChuBot/blob/master/chubot.jpg">
 
 To invite ChuBot to your own server click on the following link:
 
 https://discordapp.com/api/oauth2/authorize?client_id=692667384044978250&permissions=8&scope=bot
 
-ChuBot is the first Discord bot I have ever worked on! It makes use of the discord.py module designed by Rapptz. In this current working version the bot is capable of handling the following events and commands:
+**Note: ChuBot is currently not hosted on an external server. To run the bot, it will have to be running on my own machine. In the future the functionality will be added. Please contact me to test.** 
 
 ## Events
 
