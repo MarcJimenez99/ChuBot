@@ -73,7 +73,7 @@ async def help_mod_commands(ctx):
     embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/178405015059169280/693425554627493898/chubot.jpg')
     embed.add_field(name='!add_to_whitelist', value='Adds a user to the whitelist', inline=False)
     embed.add_field(name='!remove_from_whitelist', value='Removes a whitelisted user', inline=True)
-    
+    embed.add_field(name='!clear', value='Clears a number of messages', inline=True)
     await ctx.send(embed=embed)
 
 @bot.command()
@@ -83,6 +83,11 @@ async def ping(ctx):
 @bot.command()
 async def users(ctx):
     await ctx.send(f'The server has: {ctx.guild.member_count} users')
+
+@bot.command(aliases=['HMPH', 'HMMPH'])
+async def hmph(ctx):
+    await ctx.send(f'You are a dumb bitch {ctx.message.author}!')
+
 
 @bot.command()
 async def clear(ctx, amount=1):
@@ -120,10 +125,10 @@ async def remove_from_whitelist(ctx, *, name):
 
 @bot.command(aliases =['Hey','Hello','hey'])
 async def hello(ctx):
-    responses = ['Hello!',
-    'Welcome to the server!',
-    'Hi how have you been!',
-    'Whats up!'
+    responses = ['Hello {ctx.message.author}!',
+    'Welcome to the server {ctx.message.author}!',
+    'Hi {ctx.message.author}, how have you been!',
+    'Whats up {ctx.message.author}!'
     ]
     await ctx.send(f'{random.choice(responses)}')
 
@@ -152,4 +157,4 @@ async def _8ball(ctx, *, question): # Asterik takes in all following arguments
     ]  
     await ctx.send(f'Question: {question}\nAnswer: {random.choice(responses)}')
    
-bot.run('Bot Token Goes Here')
+bot.run('Bot token goes here')
